@@ -447,7 +447,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -508,6 +508,7 @@ GameObject:
   - component: {fileID: 1008885761}
   - component: {fileID: 1008885763}
   - component: {fileID: 1008885762}
+  - component: {fileID: 1008885764}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -600,8 +601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed75f27880734444084787896f99e330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  steerspeed: 0.5
-  movespeed: 0.1
+  steerspeed: 200
+  movespeed: 10
 --- !u!61 &1008885762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -663,7 +664,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -675,6 +676,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1008885764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008885758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acb86f7681ed1745b5bfb4b2c57ec03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
