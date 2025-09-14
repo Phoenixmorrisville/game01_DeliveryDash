@@ -362,7 +362,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 8405409783181761147, guid: 47285c58053d4b84eb230fea53396a01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Driver
   steerspeed: 350
-  movespeed: 5
+  movespeed: 7
 --- !u!212 &325295180
 SpriteRenderer:
   m_ObjectHideFlags: 0

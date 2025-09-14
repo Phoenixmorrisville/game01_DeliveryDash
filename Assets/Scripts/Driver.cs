@@ -20,20 +20,28 @@ public class Driver : MonoBehaviour
         if (Keyboard.current.wKey.isPressed)
         {
             move = 1f;
+            if (Keyboard.current.aKey.isPressed)
+            {
+                steer = 1f;
+            }
+            else if (Keyboard.current.dKey.isPressed)
+            {
+                steer = -1f;
+            }
         }
         else if (Keyboard.current.sKey.isPressed)
         {
             move = -1f;
+            if (Keyboard.current.aKey.isPressed)
+            {
+                steer = 1f;
+            }
+            else if (Keyboard.current.dKey.isPressed)
+            {
+                steer = -1f;
+            }
         }
-        if (Keyboard.current.aKey.isPressed)
-        {
-            steer = 1f;
-        }
-        else if (Keyboard.current.dKey.isPressed)
-        {
-            steer = -1f;
-        }
-
+        
         float moveAmount = move * movespeed * Time.deltaTime;
         float steerAmount = steer * steerspeed * Time.deltaTime;
 
