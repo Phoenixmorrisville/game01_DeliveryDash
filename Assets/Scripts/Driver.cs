@@ -33,6 +33,7 @@ public class Driver : MonoBehaviour
         {
             steer = -1f;
         }
+
         float moveAmount = move * movespeed * Time.deltaTime;
         float steerAmount = steer * steerspeed * Time.deltaTime;
 
