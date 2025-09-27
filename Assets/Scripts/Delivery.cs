@@ -10,12 +10,14 @@ public class Delivery : MonoBehaviour
         {
             Debug.Log("Pick up Package");
             hasPackage = true;
+            GetComponent<ParticleSystem>().Play();
             Destroy(collision.gameObject, delay);
         }
         if (collision.CompareTag("Customer") && hasPackage)
         {
             Debug.Log("Delivered Package");
             hasPackage = false;
+            GetComponent<ParticleSystem>().Stop();
         }
 
     }
