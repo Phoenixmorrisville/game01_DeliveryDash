@@ -27,8 +27,12 @@ public class Driver : MonoBehaviour
     }
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
-        currentSpeed = regularSpeed;
-        BoostText.gameObject.SetActive(false);
+        if (collision.collider.CompareTag("WorldCollision"))
+        {
+            currentSpeed = regularSpeed;
+            BoostText.gameObject.SetActive(false);
+        }
+
     }
     // Update is called once per frame
     void Update()
